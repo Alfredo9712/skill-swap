@@ -11,18 +11,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-blue-400",
-        danger: "bg-red-500",
-        alert: "bg-yellow-500",
+        primary: "border-2 border-black rounded-full",
+        secondary: "border-2 border-black rounded-full bg-black text-white",
       },
       size: {
-        small: "py-2 px-4",
-        large: "text-xl py-3 px-6",
+        default: "py-1 px-4 ",
       },
     },
     defaultVariants: {
-      size: "small",
-      variant: "primary",
+      size: "default",
     },
   }
 );
