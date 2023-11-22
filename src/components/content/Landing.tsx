@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import React from "react";
-
 import { signIn } from "next-auth/react";
-import Button from "../ui/Button";
+
+import Button from "@/components/ui/Button";
 
 const Landing = () => {
   return (
@@ -20,6 +20,7 @@ const Landing = () => {
             {" "}
             Join us in shaping the future, puzzle piece by puzzle piece.
           </h2>
+          <div className="pt-10" />
           <Button
             onClick={() => signIn()}
             variant="secondary"

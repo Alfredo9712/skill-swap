@@ -2,7 +2,7 @@
 import React from "react";
 import { signIn } from "next-auth/react";
 
-import Button from "./Button";
+import Button from "@/components/ui/Button";
 
 const Auth = () => {
   return (

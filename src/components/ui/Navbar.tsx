@@ -1,10 +1,10 @@
+import React from "react";
+import Image from "next/image";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 
-import React from "react";
-import Avatar from "./Avatar";
-import Auth from "./Auth";
-import Image from "next/image";
+import Avatar from "@/components/ui/Avatar";
+import Auth from "@/components/ui/Auth";
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
