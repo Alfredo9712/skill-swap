@@ -1,5 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+
+import { signIn } from "next-auth/react";
+import Button from "../ui/Button";
 
 const Landing = () => {
   return (
@@ -15,6 +20,13 @@ const Landing = () => {
             {" "}
             Join us in shaping the future, puzzle piece by puzzle piece.
           </h2>
+          <Button
+            onClick={() => signIn()}
+            variant="secondary"
+            className="w-40 h-14 text-base p-0 "
+          >
+            Sign up
+          </Button>
         </div>
         <div className="flex-initial flex-shrink-0 relative w-[200px] h-[200px] md:w-[350px] md:h-[350px]  lg:w-[500px] lg:h-[500px]">
           <Image
