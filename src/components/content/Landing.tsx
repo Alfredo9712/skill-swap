@@ -23,7 +23,7 @@ const Landing = () => {
           <Button
             onClick={() => signIn()}
             variant="secondary"
-            className="w-40 h-14 text-base p-0 "
+            className="w-40 h-14 text-lg p-0 "
           >
             Sign up
           </Button>
