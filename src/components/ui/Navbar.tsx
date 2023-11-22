@@ -10,7 +10,7 @@ const Navbar = async () => {
   const session = await getServerSession(authOptions);
 
   return (
-    <nav className="flex justify-between h-14 items-center font-medium">
+    <nav className="flex justify-between h-14 items-center font-medium  py-9">
       <div className="flex items-center gap-3">
         <Image src={"/logo.png"} width={49} height={49} alt="logo" />
       </div>
