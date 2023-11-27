@@ -16,13 +16,14 @@ const Navbar = async () => {
       </div>
       <ul className="flex gap-2 items-center">
         <li>Home</li>
-        {/* {session?.user ? (
-          <Avatar img={session.user.image as string} />
+        {session?.user ? (
+          // <Avatar img={session.user.image as string} />
+          <p>avatar</p>
         ) : (
           <li>
             <Auth />
           </li>
-        )} */}
+        )}
       </ul>
     </nav>
   );
