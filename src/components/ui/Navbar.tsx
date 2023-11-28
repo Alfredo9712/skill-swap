@@ -17,8 +17,7 @@ const Navbar = async () => {
       <ul className="flex gap-2 items-center">
         <li>Home</li>
         {session?.user ? (
-          // <Avatar img={session.user.image as string} />
-          <p>avatar</p>
+          <Avatar img={session.user.image} />
         ) : (
           <li>
             <Auth />
