@@ -4,7 +4,7 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
 
 import Avatar from "@/components/ui/Avatar";
-import Auth from "@/components/ui/Auth";
+import Auth from "@/components/ui/AuthButton";
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
