@@ -14,7 +14,7 @@ const Landing = async () => {
   }
 
   return (
-    <div className="flex justify-center flex-col items-center pt-10 sm:pt-10 md:px-10 md:pt-32 ">
+    <div className="flex justify-center flex-col items-center pt-10 sm:pt-10 md:px-10 md:pt-[10%] ">
       <div className="flex items-center  w-full flex-col md:flex-row md:max-w-4xl lg:max-w-6xl">
         <div className="text-5xl font-bold flex-initial flex flex-col gap-3">
           <h1>Welcome to Skill Swap</h1>
