@@ -3,8 +3,6 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 
 import NextAuthProvider from "@/components/providers/NextAuthProvider";
-import Navbar from "@/components/ui/Navbar";
-import AuthProvider from "@/components/hooks/useAuthHook";
 
 const roboto = Roboto({
   subsets: ["latin"],
