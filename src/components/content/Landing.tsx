@@ -35,6 +35,7 @@ const Landing = async () => {
             alt="image demonstrating collaboration"
             fill
             className="w-full"
+            priority
           />
         </div>
       </div>
