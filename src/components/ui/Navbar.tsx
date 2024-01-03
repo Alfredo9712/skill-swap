@@ -20,7 +20,7 @@ const Navbar = ({ avatarImg }: NavbarProps) => {
       </div>
       <ul className="flex gap-2 items-center">
         {!isDashBoard && <Link href="/dashboard">Home </Link>}
-        <Avatar img={avatarImg} />
+        <Avatar img={avatarImg} href="/dashboard" />
       </ul>
     </nav>
   );
