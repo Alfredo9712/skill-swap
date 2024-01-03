@@ -49,10 +49,7 @@ model User {
   image         String?
   accounts      Account[]
   sessions      Session[]
-  profile       Profile?  @relation(fields: [profileId], references: [id])
-  profileId     String?
-
-  @@index([profileId])
+  profile       Profile?
 }
 
 model Profile {
@@ -60,7 +57,9 @@ model Profile {
   userId String
   bio    String?
   image  String?
-  User   User[]
+  user   User    @relation(fields: [userId], references: [id])
+
+  @@unique([userId])
 }
 
 model VerificationToken {
