@@ -24,7 +24,7 @@ const Navbar = ({ session }: NavbarProps) => {
       </div>
       <ul className="flex gap-2 items-center">
         {user && user.image && (
-          <Avatar img={user.image} href={`/dashboard/${user.id}`} />
+          <Avatar img={user.image} href={`/profile/${user.id}`} />
         )}
       </ul>
     </nav>
