@@ -5,12 +5,15 @@ import { usePathname } from "next/navigation";
 
 import Avatar from "@/components/ui/Avatar";
 import Link from "next/link";
+import { Session } from "next-auth";
 
 interface NavbarProps {
-  avatarImg: string | undefined | null;
+  session: Session;
 }
 
-const Navbar = ({ avatarImg }: NavbarProps) => {
+const Navbar = ({ session }: NavbarProps) => {
+  const { user } = session || {};
+  console.log(user);
   const pathname = usePathname();
   const isDashBoard = pathname === "/dashboard";
   return (
@@ -19,8 +22,7 @@ const Navbar = ({ avatarImg }: NavbarProps) => {
         <Image src={"/logo.png"} width={40} height={40} alt="logo" />
       </div>
       <ul className="flex gap-2 items-center">
-        {!isDashBoard && <Link href="/dashboard">Home </Link>}
-        <Avatar img={avatarImg} href="/dashboard" />
+        {user && user.image && <Avatar img={user.image} href={`/dashboard/`} />}
       </ul>
     </nav>
   );
