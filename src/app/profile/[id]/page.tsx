@@ -25,7 +25,7 @@ const Profile = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-      <ProfileHero avatarImg={user.image} />
+      <ProfileHero avatarImg={user.image} isUsersProfile={isUsersProfile} />
 
       {/* <h2>{name}</h2> */}
     </div>

@@ -10,10 +10,5 @@ export default async function ProfileLayout({
 }) {
   const session = await getServerSession(authOptions);
 
-  return (
-    <section>
-      {!!session?.user.id && <Navbar session={session} />}
-      {children}
-    </section>
-  );
+  return <section>{children}</section>;
 }

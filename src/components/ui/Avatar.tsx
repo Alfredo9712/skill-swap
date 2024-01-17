@@ -18,6 +18,8 @@ const Avatar = ({ img, href, className }: AvatarProps) => {
           alt="profile image"
           fill
           className="rounded-full"
+          priority
+          quality={100}
         />
       ) : (
         <Link href={href}>
@@ -26,6 +28,8 @@ const Avatar = ({ img, href, className }: AvatarProps) => {
             alt="profile image"
             fill
             className="rounded-full"
+            priority
+            quality={100}
           />
         </Link>
       )}
