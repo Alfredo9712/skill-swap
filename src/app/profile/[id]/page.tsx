@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { prisma } from "../../../../prisma/prismaClient";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { getServerSession } from "next-auth";
+
+import ProfileHero from "@/components/content/ProfileComponents/ProfileHero";
 
 const Profile = async ({ params }: { params: { id: string } }) => {
   const { user: sessionUser } = (await getServerSession(authOptions)) || {};
@@ -23,8 +25,9 @@ const Profile = async ({ params }: { params: { id: string } }) => {
 
   return (
     <div>
-      <h1>{`${isUsersProfile}`}</h1>
-      <h2>{name}</h2>
+      <ProfileHero avatarImg={user.image} />
+
+      {/* <h2>{name}</h2> */}
     </div>
   );
 };

@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <NextAuthProvider>
         <body className={roboto.className}>
-          <div className="flex justify-center sm:px-5 ">
+          <div className="flex justify-center sm:px-7 ">
             <div className=" w-full md:max-w-5xl lg:max-w-7xl ">{children}</div>
           </div>
         </body>
